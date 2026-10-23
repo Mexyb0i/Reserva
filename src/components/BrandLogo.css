@@ -1,0 +1,66 @@
+.brand-logo {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 3px;
+  color: #ff3b3b;
+  font-family: Sora, Inter, Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -.075em;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-logo__word {
+  display: block;
+}
+
+.brand-logo__mark {
+  width: 15px;
+  height: 15px;
+  overflow: visible;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+  transform: rotate(-12deg);
+}
+
+.brand-logo:hover {
+  color: #ff5656;
+}
+
+.brand-logo:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid #ff7a3b;
+  outline-offset: 4px;
+}
+
+.brand-logo--small {
+  font-size: 13px;
+}
+
+.brand-logo--small .brand-logo__mark {
+  width: 13px;
+  height: 13px;
+}
+
+.brand-logo--large {
+  font-size: 20px;
+}
+
+.brand-logo--large .brand-logo__mark {
+  width: 18px;
+  height: 18px;
+}
+
+@media (min-width: 768px) {
+  .topbar-brand {
+    display: none;
+  }
+}

@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #1c1c1c;
+  --color-surface: #262626;
+  --color-sidebar: #2b2b2b;
+  --color-border: #3a3a3a;
+  --color-text: #ffffff;
+  --color-muted: #9a9a9a;
+  --color-brand: #e01b1b;
+  --color-accent: #ff7a00;
+  --color-success: #2ecc40;
+  --color-danger: #d62828;
+  --color-info: #2f6fed;
+  --color-auth-panel: #7a7a7a;
+  --color-auth-input: #ffffff;
+  --color-auth-button: #000000;
+  --color-bg-rgb: 28 28 28;
+  --color-surface-rgb: 38 38 38;
+  --color-sidebar-rgb: 43 43 43;
+  --color-border-rgb: 58 58 58;
+  --color-text-rgb: 255 255 255;
+  --color-muted-rgb: 154 154 154;
+  --color-brand-rgb: 224 27 27;
+  --color-accent-rgb: 255 122 0;
+  --color-success-rgb: 46 204 64;
+  --color-danger-rgb: 214 40 40;
+  --color-info-rgb: 47 111 237;
+  --color-auth-panel-rgb: 122 122 122;
+  --color-auth-input-rgb: 255 255 255;
+  --color-auth-button-rgb: 0 0 0;
+}
+
+html {
+  background: var(--color-bg);
+}
+
+body {
+  @apply m-0 min-h-screen bg-bg font-sans text-text antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-border;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-bg;
+}
